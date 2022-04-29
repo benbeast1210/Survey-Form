@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Survey Template</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Title Section -->
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">League-Wide Survey</h1>
+      <p id="description" class="description text-center">
+        This brief inquiry will influence the construction and maintenence of the this new league for years to come.
+      </p>
+    </header>
+
+    <main>
+
+      <!-- Team Name Input -->
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="teamname-label" for="name">Team Name (You may also remain anon, just don't leave it blank.)</label>
+          <input type="text" name="teamname" id="teamname" class="form-control"
+            placeholder="Password is Taco, Bo Knows Fantasy, Tank Bowl Regular, Elon's Peons, The ..." required />
+        </div>
+
+        <!-- Player Name Input -->
+        <div class="form-group">
+          <label id="playername-label" for="playername">Player Name (You may also remain anon, just don't leave it
+            blank.)</label>
+          <input type="text" name="playername" id="playername" class="form-control"
+            placeholder="Ruxin, Taco, Mr. T, Tobey Maguire, Kal-El, Mr. McMahon, Megan Fox, Snoop ..." required />
+        </div>
+
+
+        <!-- Draft Strategy Input -->
+        <div class="form-group">
+          <p>Which option best describes your preferred draft strategy?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>In a perfect world, what is your most ideal opening draft outcome?</option>
+            <option value="option">1st Rd. RB/2nd Rd. WR/3rd Rd. WR/4th Rd. QB</option>
+            <option value="option">1st Rd. WR/2nd Rd. TE/3rd Rd. RB/4th Rd. RB</option>
+            <option value="option">1st Rd. WR/2nd Rd. RB/3rd Rd. RB/4th Rd. WR</option>
+            <option value="option">1st Rd. RB/2nd Rd. RB/3rd Rd. RB/4th Rd. WR</option>
+            <option value="option">1st Rd. WR/2nd Rd. RB/3rd Rd. WR/4th Rd. WR</option>
+            <option value="option">1st Rd. QB/2nd Rd. TE/3rd Rd. RB/4th Rd. WR</option>
+            <option value="preferNo">A magician never reveals their secrets...</option>
+          </select>
+        </div>
+
+        <!-- Preferred Draft Pick Input -->
+        <div class="form-group">
+          <label id="number-label" for="number">Type your preferred 1st Round Draft Pick Number<span
+              class="clue">(optional)</span></label>
+          <input type="number" name="draftpick" id="number" min="1" max="14" class="form-control" placeholder="1" />
+        </div>
+
+        <!-- Victories Radio Section -->
+        <div class="form-group">
+          <p>How many times have you won the league?</p>
+          <label>
+            <input name="user-wins" value="scrub" type="radio" class="input-radio" checked />Ask me next year
+            (None)</label>
+          <label>
+            <input name="user-wins" value="novice" type="radio" class="input-radio" />Only once, but it was
+            glorious.</label>
+
+          <label><input name="user-wins" value="gettingthere" type="radio" class="input-radio" />A humble pair of
+            wins</label>
+          <label><input name="user-wins" value="beenaround" type="radio" class="input-radio" />Anyone with 3 under their
+            belt is sure to pose a threat</label>
+          <label><input name="user-wins" value="kingpin" type="radio" class="input-radio" />You're getting into kingpin
+            territory if you have 4 wins</label>
+          <label><input name="user-wins" value="moneyx3" type="radio" class="input-radio" />5 wins gets you into the
+            penthouse</label>
+          <label><input name="user-wins" value="boss" type="radio" class="input-radio" />With too many to count, I am
+            the Final Boss</label>
+        </div>
+
+        <!-- Trade Habits Input -->
+        <div class="form-group">
+          <p>
+            Which of the following statements best describes your outlook on trading?
+          </p>
+          <select id="most-like" name="trade-culture" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="full">I take full advantage of trading weekly; I'll likely have made several pre-draft
+              trades.</option>
+            <option value="players">I like to trade players, but not picks.</option>
+            <option value="picks">I'll trade around heavy in the draft, and stick to my team through the season.
+            </option>
+            <option value="mild">I play the cards dealt to me, and only trade in emergencies.</option>
+          </select>
+        </div>
+
+        <!-- League Features Input -->
+        <div class="form-group">
+          <p>
+            What are the some of the defining features of a great Fantasy Football League, in your opinion? (Check all
+            that apply)
+            <span class="clue">
+              These are organized in a yes/no type of format, leaving something blank will lead the
+              survey readers to assume you prefer the opposite of the option presented.
+            </span>
+          </p>
+          <label><input name="prefer" value="later-trade-deadline" type="checkbox" class="input-checkbox" /> I prefer a later trade deadline.</label>
+          <label><input name="prefer" value="snake-draft" type="checkbox" class="input-checkbox" />I prefer the snake draft over any other format.</label>
+          <label><input name="prefer" value="live-draft" type="checkbox" class="input-checkbox" /> Having a live, in-person draft is the strongest way to start the season.</label>
+          <label><input name="prefer" value="tight-ends" type="checkbox" class="input-checkbox" />Tight Ends should have a required position in order to remain relevant.</label>
+          <label><input name="prefer" value="paywall-trades" type="checkbox" class="input-checkbox" />Trades and Acquisitions should be pay-walled.</label>
+          <label><input name="prefer" value="hank" type="checkbox" class="input-checkbox" />____ is an excellent commissioner.</label>
+          <label><input name="prefer" value="entry-fee-cap" type="checkbox" class="input-checkbox" />Unless a time comes where its agreed that it should be re-evaluated, the Entry Fee should not exceed $100.</label>
+          <label><input name="prefer" value="no-multi-owner-teams" type="checkbox" class="input-checkbox" />There should only be one owner per team.</label>
+          <label><input name="prefer" value="player-count" type="checkbox" class="input-checkbox" /># of teams in league should be capped at 14.</label>
+          <label><input name="prefer" value="no-position-limits" type="checkbox" class="input-checkbox" />I should be able to get as many players in a given position as I want.</label>
+          <label><input name="prefer" value="fa-bidding" type="checkbox" class="input-checkbox" />"Free Agency Bucks" (FAB Bucks) should be implemented to limit free agency spending. Regardless of Acquisition Fees.</label>
+        </div>
+
+        <!-- Suggestions -->
+        <div class="form-group">
+          <p>What changes would you implement to make the league perfect?</p>
+          <textarea id="suggestions" class="input-textarea" name="suggestions"
+            placeholder="Computerized draft order, Position/Lineup reccomendations, player count tweaks, trade implications, etc..."></textarea>
+        </div>
+
+        <!--  Comments -->
+        <div class="form-group">
+          <p>What changes would you implement to make the league perfect?</p>
+          <textarea id="comments" class="input-textarea" name="comment"
+            placeholder="Questions, Comments, Concerns..."></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+  </div>
+
+  </main>
+
+</body>
+
+</html>

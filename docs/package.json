@@ -1,0 +1,18 @@
+{
+  "name": "ff-survey",
+  "version": "1.0.0",
+  "description": "This survey webpage is designed to be flexible to any surveying situations.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjamin Sams",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2"
+  }
+}
